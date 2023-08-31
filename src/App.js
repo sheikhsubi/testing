@@ -75,12 +75,18 @@ export default function App() {
   }
   return (
     <div className="container">
-    <h1>SIGN UP FORM </h1>
+      <h1>SIGN UP FORM </h1>
       <form onSubmit={HandleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Name
-            <input type="text" value={name} className="form-control" id="name" onChange={handleName}></input>
+            <input
+              type="text"
+              value={name}
+              className="form-control"
+              id="name"
+              onChange={handleName}
+            ></input>
             {nameError ? <span>User Not Valid</span> : ""}
           </label>
           <br /> <br />
@@ -129,6 +135,7 @@ export default function App() {
           <br /> <br />
         </div>
         <button>SUBMIT</button>
+        <Demo />
       </form>
     </div>
   );
